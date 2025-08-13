@@ -1,8 +1,12 @@
+import Navbar from "@/shared/Navbar";
+import HeroSection from "@/components/hero/HeroSection";
+
 const App = () => {
   return (
-    <div>
-      <h1>this is normal font</h1>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
   );
 };
 

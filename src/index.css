@@ -5,12 +5,22 @@
   --color-primaryBlack: #262626;
   --color-primaryYellow: #f9b800;
 
-  --font-segoe: "Segoe UI Regular";
-  --font-segoe-bold: "Segoe UI Bold";
+  --font-segoe: "Segoe UI This";
 }
 
 body {
   background-color: var(--color-primaryBg);
-  font-family: var(--font-segoe-bold);
-  font-weight: 400;
+  font-family: var(--font-segoe);
 }
+
+/* custom css */
+.common_button:hover {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.common_button:hover svg {
+  transform: rotate(90deg);
+}
+/* custom css */
