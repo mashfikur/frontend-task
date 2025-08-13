@@ -14,13 +14,29 @@ body {
 }
 
 /* custom css */
-.common_button:hover {
+.common_button.dark:hover {
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
 }
+.common_button.light:hover {
+  box-shadow: 10px 10px 0px 0px rgba(249, 184, 0, 1);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(249, 184, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(249, 184, 0, 1);
+}
 
 .common_button:hover svg {
   transform: rotate(90deg);
+}
+
+.shaped_bg {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.item_card .hover_item {
+  clip-path: circle(5% at 50% 50%);
+}
+.item_card:hover .hover_item {
+  clip-path: circle(50% at 50% 50%);
 }
 /* custom css */

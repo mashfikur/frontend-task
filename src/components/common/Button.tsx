@@ -1,13 +1,19 @@
 const Button = ({
   text = "Lorem Ipsum",
-  link = "/",
+  link = "#",
+  version = "dark",
 }: {
   text?: string;
   link?: string;
+  version?: "dark" | "light";
 }) => {
   return (
     <a
-      className="flex w-fit py-5 px-[50px] bg-primaryYellow rounded-full gap-14 common_button duration-300 ease-in-out  border-[2px] border-transparent hover:border-primaryBlack"
+      className={`flex w-fit py-5 px-[50px] rounded-full gap-14 common_button duration-300 ease-in-out border-[2px] border-transparent ${
+        version === "dark"
+          ? `hover:border-primaryBlack bg-primaryYellow dark`
+          : `hover:border-primaryYellow bg-white light`
+      } `}
       href={link}
     >
       <span className="text-[22px] font-bold text-primaryBlack">{text}</span>

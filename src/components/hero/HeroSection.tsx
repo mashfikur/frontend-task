@@ -17,15 +17,15 @@ const pillsData = [
 const HeroSection = () => {
   return (
     <Container>
-      <div className="mt-[115px] mb-20 px-20 flex items-center gap-3">
+      <div className="mt-[115px] mb-20 px-20 flex items-center justify-between gap-3">
         {/* left section */}
-        <div className="flex-1 space-y-[60px]">
+        <div className="max-w-[45%] space-y-[60px]">
           <div>
             <p className="capitalize text-primaryYellow font-bold text-3xl ">
               risus praesent vulputate.{" "}
             </p>
-            <Title>Cursus Integer</Title>
-            <Title>
+            <Title version="lg">Cursus Integer</Title>
+            <Title version="lg">
               <div className="flex items-center gap-2.5">
                 <span>Consequat</span>
                 <TypeWriter text="Tristique" />
@@ -45,8 +45,14 @@ const HeroSection = () => {
         </div>
 
         {/* right section */}
-        <div className="w-full max-w-[700px] aspect-square flex-1">
-          <img src={bannerArt} alt="hero_banner_art" />
+        <div className="flex-1">
+          <div className="max-w-[650px] ml-auto aspect-square">
+            <img
+              src={bannerArt}
+              alt="hero_banner_art"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
       </div>
     </Container>
