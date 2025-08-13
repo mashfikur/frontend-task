@@ -12,7 +12,7 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="nav_logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-120"
               />
             </div>
           </div>

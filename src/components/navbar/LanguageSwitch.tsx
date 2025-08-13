@@ -11,6 +11,7 @@ const LanguageSwitch = () => {
         showSelectedLabel={false}
         showSecondarySelectedLabel={false}
         showOptionLabel={false}
+        
       />
     </div>
   );

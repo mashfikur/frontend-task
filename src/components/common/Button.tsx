@@ -7,10 +7,10 @@ const Button = ({
 }) => {
   return (
     <a
-      className="flex w-fit py-6 px-[50px] bg-primaryYellow rounded-full gap-18 common_button duration-300 ease-in-out  border-[2px] border-transparent hover:border-primaryBlack"
+      className="flex w-fit py-5 px-[50px] bg-primaryYellow rounded-full gap-14 common_button duration-300 ease-in-out  border-[2px] border-transparent hover:border-primaryBlack"
       href={link}
     >
-      <span className="text-2xl font-bold text-primaryBlack">{text}</span>
+      <span className="text-[22px] font-bold text-primaryBlack">{text}</span>
       <span className="block size-[30px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
