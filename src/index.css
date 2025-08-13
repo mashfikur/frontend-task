@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryBg: #feedbc;
+  --color-primaryBlack: #262626;
+  --color-primaryYellow: #f9b800;
+
+  --font-segoe: "Segoe UI Regular";
+  --font-segoe-bold: "Segoe UI Bold";
+}
+
+body {
+  background-color: var(--color-primaryBg);
+  font-family: var(--font-segoe-bold);
+  font-weight: 400;
+}
