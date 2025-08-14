@@ -1,4 +1,4 @@
-import type { CardType } from "@/components/vertical-cards/Card";
+import type { CardType, CarouselType } from "./types";
 
 import icon1 from "@/assets/images/icons/1.png";
 import icon2 from "@/assets/images/icons/2.png";
@@ -33,5 +33,33 @@ export const cards: CardType[] = [
     title: "Ametneq",
     subtitle: "magna consectetur leo.",
     icon: icon4,
+  },
+];
+
+import carouselImg from "@/assets/images/carousel-img.jpg";
+
+export const CarouselData: CarouselType[] = [
+  {
+    avatar: carouselImg,
+    title: "What our customers thought?",
+    subtitle:
+      "Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. ",
+    client: "Holly Davidson",
+  },
+  {
+    avatar:
+      "https://images.pexels.com/photos/2794868/pexels-photo-2794868.jpeg",
+    title: "What our customers thought?",
+    subtitle:
+      "Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. ",
+    client: "Jessica marley",
+  },
+  {
+    avatar:
+      "https://images.pexels.com/photos/33418594/pexels-photo-33418594.jpeg",
+    title: "What our customers thought?",
+    subtitle:
+      "Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. ",
+    client: "David Hudson",
   },
 ];

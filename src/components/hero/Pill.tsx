@@ -1,3 +1,4 @@
+
 const Pill = ({ item }: { item: string }) => {
   return (
     <div className="py-4 pl-5 pr-10 bg-white gap-2 text-xl  rounded-full flex items-center min-w-fit">

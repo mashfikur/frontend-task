@@ -4,6 +4,7 @@ import Title from "@/components/common/Title";
 import Button from "../common/Button";
 import Pill from "./Pill";
 import TypeWriter from "./TypeWriter";
+import { Fade } from "react-awesome-reveal";
 
 const pillsData = [
   "Cursus Integer",
@@ -34,11 +35,19 @@ const HeroSection = () => {
           </div>
 
           {/* pills */}
-
           <div className="flex-wrap flex gap-3.5 ">
-            {pillsData.map((item, i) => (
-              <Pill key={i} item={item} />
-            ))}
+            <Fade
+              className="flex-wrap flex gap-3.5 "
+              cascade
+              damping={0.3}
+              triggerOnce
+              direction="down"
+              duration={700}
+            >
+              {pillsData.map((item, i) => (
+                <Pill key={i} item={item} />
+              ))}
+            </Fade>
           </div>
 
           <Button />

@@ -1,17 +1,21 @@
-export type CardType = {
-  id: number;
-  heading: string;
-  title: string;
-  subtitle: string;
-  icon: string;
-};
+import type { CardType } from "@/utils/types";
 
-const Card = ({ item, isDark }: { item: CardType; isDark: boolean }) => {
+;
+
+const Card = ({
+  item,
+  isDark,
+  isElevated,
+}: {
+  item: CardType;
+  isDark: boolean;
+  isElevated?: boolean;
+}) => {
   return (
     <div
-      className={`p-[50px] rounded-[60px] text-primaryBlack hover:text-white duration-300 ease-in-out w-full relative overflow-hidden item_card   ${
-        isDark ? `bg-primaryYellow ` : `bg-white`
-      } `}
+      className={`p-[50px] rounded-[60px] text-primaryBlack hover:text-white duration-300 ease-in-out w-full h-fit relative overflow-hidden group item_card drop-shadow-2xl ${
+        isElevated ? `-mt-20` : ``
+      }   `}
     >
       <div className="relative z-20">
         <div className="size-[60px]">
@@ -45,7 +49,14 @@ const Card = ({ item, isDark }: { item: CardType; isDark: boolean }) => {
       </div>
 
       {/* hover overlay */}
-      <div className="bg-primaryBlack absolute duration-500 ease-in-out -top-14 -left-[65%] -translate-x-[10%] hover_item size-[1100px]"></div>
+      <div className="bg-primaryBlack absolute duration-500 ease-in-out -top-14 -left-[65%] -translate-x-[10%] hover_item size-[1100px] z-10"></div>
+
+      {/* background */}
+      <div
+        className={`${
+          isDark ? `bg-primaryYellow` : `bg-white`
+        } absolute w-full h-full top-0 left-0 z-[5] group-hover:bg-transparent duration-500 ease-in-out`}
+      ></div>
     </div>
   );
 };

@@ -30,6 +30,7 @@ const CardsSection = () => {
                 key={i}
                 item={item}
                 isDark={item.id === 2 || item.id === 3}
+                isElevated={item.id === 1 || item.id === 3}
               />
             ))}
           </div>
