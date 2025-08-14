@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="mt-[65px]">
       <Container>
-        <div className="bg-white flex items-center justify-between py-4 px-[26px] rounded-[5000px] w-full drop-shadow-lg">
+        <div className="bg-white flex items-center justify-between py-4 px-[26px] rounded-[5000px] w-full">
           <div className="flex-1">
             <div className="w-[130px] h-[60px] mx-auto">
               <img

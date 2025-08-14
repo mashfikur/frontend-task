@@ -47,4 +47,8 @@ body {
 .card_carousel:hover svg.not_active path {
   fill: white;
 }
+
+.language_switch button {
+  border: none;
+}
 /* custom css */

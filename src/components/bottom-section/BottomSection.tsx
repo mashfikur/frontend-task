@@ -6,12 +6,12 @@ import Pill from "@/components/hero/Pill";
 import Button from "@/components/common/Button";
 
 const pillsData = [
-  "Cursus Integer",
-  "Integer Consequat ",
-  "Tellus Euismod Pellentesque",
-  "Aliquot Tristique",
-  "Pellentesque Tempus",
-  "Mauris Fermentum Praesent",
+  "Ac viverra sed risus praesent vulputate. ",
+  "Natoqu consectetur pulvinar. ",
+  "Sollicitudin ornare tempus nulla varius pulvinar.",
+  "Varius pulvinar",
+  "Natoque id tellus consectetur",
+  "Vulputate et vulputate suspendisse",
 ];
 
 const BottomSection = () => {
@@ -24,9 +24,8 @@ const BottomSection = () => {
               <Title>Cursus Integer consequat Tristique.</Title>
 
               {/* pills */}
-              <div className="flex-col flex gap-3.5 ">
+              <div className="flex-wrap flex gap-3.5 ">
                 <Fade
-                  className="flex-wrap flex gap-3.5 "
                   cascade
                   damping={0.3}
                   triggerOnce

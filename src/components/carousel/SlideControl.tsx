@@ -20,9 +20,10 @@ const SlideControl = ({
         height="17"
         viewBox="0 0 40 17"
         fill="none"
-        className={`duration-500 ease-in-out ${isActive ? `` : `not_active`} `}
+        className={` ${isActive ? `` : `not_active`} `}
       >
         <path
+          className="duration-500 ease-in-out"
           d="M0.00012207 8.5L8.3009 0.199219L8.3009 6.44922L39.5509 6.44922V10.5508L8.3009 10.5508L8.3009 16.8008L0.00012207 8.5Z"
           fill={isActive ? `#F9B800` : `#262626`}
         />

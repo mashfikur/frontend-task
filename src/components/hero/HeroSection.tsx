@@ -17,54 +17,58 @@ const pillsData = [
 
 const HeroSection = () => {
   return (
-    <Container>
-      <div className="mt-[115px] mb-20 px-20 flex items-center justify-between gap-3">
-        {/* left section */}
-        <div className="max-w-[45%] space-y-[60px]">
-          <div>
-            <p className="capitalize text-primaryYellow font-bold text-3xl ">
-              risus praesent vulputate.{" "}
-            </p>
-            <Title version="lg">Cursus Integer</Title>
-            <Title version="lg">
-              <div className="flex items-center gap-2.5">
-                <span>Consequat</span>
-                <TypeWriter text="Tristique" />
-              </div>
-            </Title>
+    <section>
+      <Container>
+        <div className="mt-[115px] mb-20 px-20 flex items-center justify-between gap-3">
+          {/* left section */}
+          <div className="max-w-[45%] space-y-[60px]">
+            <div>
+              <Fade triggerOnce direction="up">
+                <p className="capitalize text-primaryYellow font-bold text-3xl ">
+                  risus praesent vulputate.{" "}
+                </p>
+              </Fade>
+              <Title version="lg">Cursus Integer</Title>
+              <Title version="lg">
+                <div className="flex items-center gap-2.5">
+                  <span>Consequat</span>
+                  <TypeWriter text="Tristique" />
+                </div>
+              </Title>
+            </div>
+
+            {/* pills */}
+            <div className="flex-wrap flex gap-3.5 ">
+              <Fade
+                className="flex-wrap flex gap-3.5 "
+                cascade
+                damping={0.3}
+                triggerOnce
+                direction="up"
+                duration={700}
+              >
+                {pillsData.map((item, i) => (
+                  <Pill key={i} item={item} />
+                ))}
+              </Fade>
+            </div>
+
+            <Button />
           </div>
 
-          {/* pills */}
-          <div className="flex-wrap flex gap-3.5 ">
-            <Fade
-              className="flex-wrap flex gap-3.5 "
-              cascade
-              damping={0.3}
-              triggerOnce
-              direction="down"
-              duration={700}
-            >
-              {pillsData.map((item, i) => (
-                <Pill key={i} item={item} />
-              ))}
-            </Fade>
+          {/* right section */}
+          <div className="flex-1">
+            <div className="max-w-[650px] ml-auto aspect-square">
+              <img
+                src={bannerArt}
+                alt="hero_banner_art"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
-
-          <Button />
         </div>
-
-        {/* right section */}
-        <div className="flex-1">
-          <div className="max-w-[650px] ml-auto aspect-square">
-            <img
-              src={bannerArt}
-              alt="hero_banner_art"
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

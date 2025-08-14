@@ -7,7 +7,7 @@ const CombinedSection = () => {
   const commonClasses = `absolute w-full  left-0 z-10 shaped_bg`;
 
   return (
-    <div className="relative py-[350px]">
+    <section className="relative py-[350px]">
       {/* combined sections */}
       <div className="relative z-50 space-y-[180px]">
         <CardsSection />
@@ -16,11 +16,13 @@ const CombinedSection = () => {
       </div>
 
       {/* after & before property */}
-      <div className={clsx(commonClasses, "top-0 bg-primaryBlack h-1/2")}></div>
       <div
-        className={clsx(commonClasses, "bottom-0 bg-primaryYellow h-[60%]")}
+        className={clsx(commonClasses, "top-0 bg-primaryBlack h-[60%]")}
       ></div>
-    </div>
+      <div
+        className={clsx(commonClasses, "bottom-0 bg-primaryYellow h-[50%]")}
+      ></div>
+    </section>
   );
 };
 
