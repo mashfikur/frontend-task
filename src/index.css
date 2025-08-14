@@ -44,4 +44,7 @@ body {
 .item_card:hover .hover_item {
   clip-path: circle(50% at 50% 50%);
 }
+.card_carousel:hover svg.not_active path {
+  fill: white;
+}
 /* custom css */
