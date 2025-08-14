@@ -12,6 +12,9 @@ const Slide = ({ item }: { item: CarouselType }) => {
       </div>
 
       <div className="text-[#262626]  space-y-5">
+        <h1 className=" text-5xl font-bold pb-5">
+          What our customers thought?
+        </h1>
         <p className="text-2xl font-normal leading-10 "> {item.subtitle} </p>
         <p className="text-xl font-bold "> {item.client} </p>
       </div>

@@ -6,7 +6,7 @@ import Card from "./Card";
 
 const CardsSection = () => {
   return (
-    <div className="bg-primaryBlack pt-[390px] pb-[700px] shaped_bg">
+    <div className="bg-transparent">
       <Container>
         <div className="px-[90px] flex items-center gap-[90px]">
           {/* left  */}
