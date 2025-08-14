@@ -1,6 +1,18 @@
 import Container from "@/components/common/Container";
 import bannerArt from "@/assets/images/banner-art-2.svg";
-import Title from "../common/Title";
+import Title from "@/components/common/Title";
+import { Fade } from "react-awesome-reveal";
+import Pill from "@/components/hero/Pill";
+import Button from "@/components/common/Button";
+
+const pillsData = [
+  "Cursus Integer",
+  "Integer Consequat ",
+  "Tellus Euismod Pellentesque",
+  "Aliquot Tristique",
+  "Pellentesque Tempus",
+  "Mauris Fermentum Praesent",
+];
 
 const BottomSection = () => {
   return (
@@ -8,8 +20,26 @@ const BottomSection = () => {
       <Container>
         <div className="flex items-center gap-[110px] px-20">
           <div className="flex-1">
-            <div>
+            <div className="space-y-[60px]">
               <Title>Cursus Integer consequat Tristique.</Title>
+
+              {/* pills */}
+              <div className="flex-col flex gap-3.5 ">
+                <Fade
+                  className="flex-wrap flex gap-3.5 "
+                  cascade
+                  damping={0.3}
+                  triggerOnce
+                  direction="up"
+                  duration={400}
+                >
+                  {pillsData.map((item, i) => (
+                    <Pill key={i} item={item} />
+                  ))}
+                </Fade>
+              </div>
+
+              <Button version="yellow" />
             </div>
           </div>
           <div className="flex-1">
