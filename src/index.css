@@ -11,6 +11,7 @@
 body {
   background-color: var(--color-primaryBg);
   font-family: var(--font-segoe);
+  scrollbar-gutter: stable both-edges;
 }
 
 /* custom css */
@@ -51,4 +52,23 @@ body {
 .language_switch button {
   border: none;
 }
+
+.preloader {
+  transition: 1s ease-in-out;
+}
+
+.preloader.shape {
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0% 100%);
+}
+.preloader.shape-reverse {
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+}
+
+.preloader.hide {
+  transform: translateX(100%);
+}
+.preloader.hide-reverse {
+  transform: translateX(-100%);
+}
+
 /* custom css */
