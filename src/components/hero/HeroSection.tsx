@@ -19,12 +19,12 @@ const HeroSection = () => {
   return (
     <section>
       <Container>
-        <div className="mt-[115px] mb-20 px-20 flex items-center justify-between gap-3">
+        <div className="mt-0  xl:mt-[115px] mb-20 px-4  xl:px-20 flex xl:flex-row flex-col-reverse items-center justify-between gap-3">
           {/* left section */}
-          <div className="max-w-[45%] space-y-[60px]">
+          <div className="xl:max-w-[45%] w-full space-y-8 xl:space-y-[60px]">
             <div>
               <Fade triggerOnce direction="up">
-                <p className="capitalize text-primaryYellow font-bold text-3xl ">
+                <p className="capitalize text-primaryYellow font-bold text-lg lg:text-3xl pb-3 xl:pb-0">
                   risus praesent vulputate.{" "}
                 </p>
               </Fade>
@@ -38,9 +38,8 @@ const HeroSection = () => {
             </div>
 
             {/* pills */}
-            <div className="flex-wrap flex gap-3.5 ">
+            <div className=" flex-col lg:flex-wrap flex gap-3.5 ">
               <Fade
-                className="flex-wrap flex gap-3.5 "
                 cascade
                 damping={0.3}
                 triggerOnce

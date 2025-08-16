@@ -12,7 +12,7 @@ const Button = ({
   return (
     <Fade className="w-fit" triggerOnce direction="up">
       <a
-        className={`flex w-fit py-5 px-[50px] rounded-full gap-14 common_button duration-300 ease-in-out border-[2px] border-transparent min-w-fit ${
+        className={`flex w-fit py-4 xl:py-5 px-10 xl:px-[50px] rounded-full gap-14 common_button duration-300 ease-in-out border-[2px] border-transparent min-w-fit ${
           version === "dark"
             ? `hover:border-primaryBlack bg-primaryYellow dark`
             : version === "yellow"
@@ -22,7 +22,7 @@ const Button = ({
         href={link}
       >
         <span
-          className={`text-[22px] font-bold ${
+          className={` text-lg xl:text-[22px] font-bold ${
             version === "yellow" ? `text-white` : `text-primaryBlack`
           }`}
         >

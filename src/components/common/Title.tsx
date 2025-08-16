@@ -17,7 +17,7 @@ const Title = ({
         <h1
           className={`${
             color === "dark" ? `text-primaryBlack` : `text-white`
-          } font-bold text-[80px]`}
+          } font-bold text-4xl xl:text-[80px]`}
         >
           {children}
         </h1>

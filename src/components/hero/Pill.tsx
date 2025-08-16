@@ -1,7 +1,6 @@
-
 const Pill = ({ item }: { item: string }) => {
   return (
-    <div className="py-4 pl-5 pr-10 bg-white gap-2 text-xl  rounded-full flex items-center min-w-fit">
+    <div className="py-3 lg:py-4 pl-5 pr-10 bg-white gap-2 text-base lg:text-xl  rounded-full flex items-center w-fit lg:min-w-fit">
       <span className="block size-[30px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
