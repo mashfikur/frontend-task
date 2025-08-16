@@ -52,7 +52,7 @@ const HeroSection = () => {
               </Fade>
             </div>
 
-            <Button />
+            <Button fullWidth/>
           </div>
 
           {/* right section */}

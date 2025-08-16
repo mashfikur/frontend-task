@@ -4,15 +4,23 @@ const Button = ({
   text = "Lorem Ipsum",
   link = "#",
   version = "dark",
+  fullWidth = false,
 }: {
   text?: string;
   link?: string;
   version?: "dark" | "light" | "yellow";
+  fullWidth?: boolean;
 }) => {
   return (
-    <Fade className="w-fit" triggerOnce direction="up">
+    <Fade
+      className={`${fullWidth ? `w-full xl:w-fit` : `w-fit`}`}
+      triggerOnce
+      direction="up"
+    >
       <a
-        className={`flex w-fit py-4 xl:py-5 px-10 xl:px-[50px] rounded-full gap-14 common_button duration-300 ease-in-out border-[2px] border-transparent min-w-fit ${
+        className={`flex w-fit items-center justify-between py-4 xl:py-5 px-10 xl:px-[50px] rounded-full gap-14 common_button duration-300 ease-in-out border-[2px] border-transparent ${
+          fullWidth ? `w-full xl:w-fit` : ``
+        } min-w-fit ${
           version === "dark"
             ? `hover:border-primaryBlack bg-primaryYellow dark`
             : version === "yellow"

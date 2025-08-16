@@ -18,13 +18,13 @@ const BottomSection = () => {
   return (
     <div>
       <Container>
-        <div className="flex items-center gap-[110px] px-20">
+        <div className="flex flex-col-reverse xl:flex-row items-center gap-5 xl:gap-[110px] px-4 xl:px-20 w-full">
           <div className="flex-1">
-            <div className="space-y-[60px]">
+            <div className="space-y-8 xl:space-y-[60px]">
               <Title>Cursus Integer consequat Tristique.</Title>
 
               {/* pills */}
-              <div className="flex-wrap flex gap-3.5 ">
+              <div className="xl:flex-wrap flex-col flex gap-3.5 ">
                 <Fade
                   cascade
                   damping={0.3}
@@ -38,11 +38,11 @@ const BottomSection = () => {
                 </Fade>
               </div>
 
-              <Button version="yellow" />
+              <Button version="yellow" fullWidth />
             </div>
           </div>
           <div className="flex-1">
-            <div className="min-w-[600px] max-w-[600px] h-[600px] mx-auto">
+            <div className="xl:min-w-[600px] w-full max-w-[600px] h-[350px] xl:h-[600px] mx-auto">
               <img
                 src={bannerArt}
                 alt="banner_art"

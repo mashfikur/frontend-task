@@ -7,9 +7,9 @@ const CombinedSection = () => {
   const commonClasses = `absolute w-full  left-0 z-10 shaped_bg`;
 
   return (
-    <section className="relative py-[350px]">
+    <section className="relative py-[160px] xl:py-[350px]">
       {/* combined sections */}
-      <div className="relative z-50 space-y-[180px]">
+      <div className="relative z-50 space-y-[60px] xl:space-y-[180px]">
         <CardsSection />
         <CarouselSection />
         <BottomSection />

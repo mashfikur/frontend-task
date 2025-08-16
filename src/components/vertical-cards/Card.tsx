@@ -1,7 +1,5 @@
 import type { CardType } from "@/utils/types";
 
-;
-
 const Card = ({
   item,
   isDark,
@@ -14,18 +12,18 @@ const Card = ({
   return (
     <div
       className={`p-[50px] rounded-[60px] text-primaryBlack hover:text-white duration-300 ease-in-out w-full h-fit relative overflow-hidden group item_card drop-shadow-2xl ${
-        isElevated ? `-mt-20` : ``
+        isElevated ? `xl:-mt-20` : ``
       }   `}
     >
       <div className="relative z-20">
-        <div className="size-[60px]">
+        <div className="size-8 xl:size-[60px]">
           <img
             src={item.icon}
             alt="card_icon"
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="text-[72px] duration-300 ease-in-out font-bold pt-6 pb-2.5">
+        <div className=" text-[60px] xl:text-[72px] duration-300 ease-in-out font-bold pt-6 pb-2.5">
           <span>{item.id}</span>
           <span
             className={`duration-300 ease-in-out ${

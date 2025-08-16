@@ -28,7 +28,10 @@ const Carousel = () => {
       <div className="relative group card_carousel">
         {/* carousel heading */}
 
-        <div className="embla bg-white  rounded-[100px]" ref={emblaRef}>
+        <div
+          className="embla bg-white rounded-[57px] xl:rounded-[100px]"
+          ref={emblaRef}
+        >
           <div className="embla__container">
             {CarouselData.map((item, i) => (
               <Slide key={i} item={item} />
@@ -37,7 +40,7 @@ const Carousel = () => {
         </div>
 
         {/* prev & next button */}
-        <div className="absolute z-40 bottom-[15%] gap-10 left-[36%] flex items-center gap">
+        <div className="absolute z-40 bottom-[5%] xl:bottom-[15%] gap-10 left-1/2 -translate-x-1/2 xl:-translate-x-0 xl:left-[36%] flex items-center gap">
           <SlideControl
             onClick={scrollPrev}
             mode="prev"

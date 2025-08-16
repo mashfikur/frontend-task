@@ -30,7 +30,7 @@ const Title = ({
       <h3
         className={`${
           color === "dark" ? `text-primaryBlack` : `text-white`
-        } text-primaryBlack font-bold text-[50px]`}
+        } text-primaryBlack font-bold text-4xl xl:text-[50px] leading-12`}
       >
         {children}
       </h3>
